@@ -1,7 +1,7 @@
 # Citerne 🚚
 
 Citerne is a wrapper around [diesel](https://crates.io/crates/diesel) and [testcontainers](https://crates.io/crates/testcontainers)
-providing a single proc macro to run test on a containerized database.
+providing a single proc macro to run tests on a containerized database.
 
 ## Roadmap
 - [ ] mysql support 

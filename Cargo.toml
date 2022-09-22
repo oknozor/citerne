@@ -2,8 +2,14 @@
 name = "citerne"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+repository = "https://github.com/oknozor/citerne"
+documentation = "https://docs.rs/citerne"
+license = "MIT"
+readme = "README.md"
+description = """
+A wrapper around diesel and testcontainers
+providing a single proc macro to run tests on a containerized database.
+"""
 
 [dependencies]
 testcontainers = "0.14"
