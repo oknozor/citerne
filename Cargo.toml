@@ -6,14 +6,14 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-testcontainers = "0.14.0"
-diesel_migrations = "2.0.0"
-diesel = { version = "2.0.0" }
-gazole-test-derive = {path = "citerne-derive" }
+testcontainers = "0.14"
+diesel_migrations = "2"
+diesel = { version = "2" }
+citerne-derive = { path = "citerne-derive" }
 
 [features]
-postgres = [ "diesel/postgres", "gazole-test-derive/postgres" ]
-mysql = [ "diesel/mysql", "gazole-test-derive/mysql" ]
+default = ["postgres"]
+postgres = [ "diesel/postgres", "citerne-derive/postgres" ]
 
-[workspace] 
+[workspace]
 members = ["citerne-derive"]

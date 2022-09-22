@@ -1,1 +1,1 @@
-TRUNCATE TABLE dummy;
+DROP TABLE dummy;
