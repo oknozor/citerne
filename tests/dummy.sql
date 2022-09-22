@@ -1,0 +1,1 @@
+INSERT INTO dummy (value) VALUES ('yeah');
