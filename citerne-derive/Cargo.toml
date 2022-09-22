@@ -5,7 +5,6 @@ edition = "2021"
 repository = "https://github.com/oknozor/citerne"
 documentation = "https://docs.rs/citerne"
 license = "MIT"
-readme = "README.md"
 description = """
 proc-macro-derive for citerne
 """

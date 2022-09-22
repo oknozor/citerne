@@ -15,7 +15,7 @@ providing a single proc macro to run tests on a containerized database.
 testcontainers = "0.14"
 diesel_migrations = "2"
 diesel = { version = "2" }
-citerne-derive = { path = "citerne-derive" }
+citerne-derive = "0.1.0"
 
 [features]
 default = ["postgres"]

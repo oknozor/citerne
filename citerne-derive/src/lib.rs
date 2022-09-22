@@ -24,7 +24,8 @@ pub fn database_container_test(attr: TokenStream, item: TokenStream) -> TokenStr
     let ident = match arg.value() {
         FnArg::Receiver(_) => panic!("{PG_SIG_ERROR_MESSAGE}"),
         FnArg::Typed(typed) => {
-            if typed.ty != syn::parse_quote!(&mut PgConnection) {
+            let arg_type = &typed.ty;
+            if quote!(#arg_type).to_string() != "&mut PgConnection" {
                 panic!("{PG_SIG_ERROR_MESSAGE}");
             }
 
