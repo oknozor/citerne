@@ -1,8 +1,12 @@
 # Citerne 🚚
+[Latest Version]: https://img.shields.io/crates/v/citerne.svg
+[crates.io]: https://www.crates.io/crates/citerne
+[![Latest Version]][crates.io] ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/oknozor/citerne) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org) ![License](https://img.shields.io/github/license/oknozor/citerne)
 
 Citerne is a wrapper around [diesel](https://crates.io/crates/diesel) and [testcontainers](https://crates.io/crates/testcontainers)
 providing a single proc macro to run tests on a containerized database.
 
+---
 ## Roadmap
 - [ ] mysql support 
 - [ ] reexpose needed diesel features (chrono, time etc)
