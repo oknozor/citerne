@@ -2,14 +2,22 @@
 name = "citerne-derive"
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/oknozor/citerne"
+documentation = "https://docs.rs/citerne"
+license = "MIT"
+readme = "README.md"
+description = """
+proc-macro-derive for citerne
+"""
 
 [lib]
 proc-macro = true
 
 [dependencies]
-syn = "1"
+syn = {version = "1", features = ["full"] }
 quote = "1"
 
 [features]
+default = ["postgres"]
 postgres = []
 mysql = []
